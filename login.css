@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #e5e5e5; /* light background */
+}
+
+.container{
+width: 400px;
+height: 500px; /* FIXED */
+background-color: #094b47; /* main theme color */
+display: flex;
+align-items: center; 
+justify-content: center;
+flex-direction: column;
+border-radius: 10px;
+}
+
+h2{
+color: #FFFFFF; /* changed from black */
+text-transform: uppercase;
+padding: 20px 0;
+font-size: 2em;
+}
+
+.form-group{
+position: relative;
+background-color: transparent; /* removed dark red */
+width: 330px;
+margin: 30px 0;
+}
+
+.form-group input{
+position: relative;
+width: 100%;
+height: 50px;
+
+background: #FFFFFF; /* white input */
+border: 2px solid #094b47; /* FIXED */
+outline: none;
+
+font-size: 1.1em;
+color: black;
+
+padding: 0 30px 0 10px;
+border-radius: 8px; /* FIXED */
+}
+
+.form-group label{
+position: absolute;
+top: 50%;
+left: 10px;
+transform: translateY(-50%);
+transition: 0.3s;
+pointer-events: none;
+
+color:#555;
+background: transparent;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label{
+
+top: -8px;
+padding: 0 5px;
+
+background: #094b47;
+color: white;
+font-size: 0.9em;   
+}
+
+p{ 
+width: 330px;
+text-align: center;
+color: white;
+padding: 10px 0;
+font-size: 0.9em;
+}
+
+.remember{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+p a{
+color: #D4AF37; /* gold link */
+text-decoration: none;
+font-weight: 600;
+}
+
+p a:hover{
+text-decoration: underline;
+}
+
+#btn{
+width: 100%;
+height: 50px;
+
+border-radius: 40px;
+border: none;
+
+font-size: 1.3em;
+text-transform: uppercase;
+font-weight: 600;
+
+margin: 10px 0;
+cursor: pointer;
+
+background-color: #D4AF37; /* gold button */
+color: white;
+
+transition: 0.3s;
+}
+
+#btn:hover{
+
+background: #b8962e; /* hover gold */
+color: white;
+
+}
